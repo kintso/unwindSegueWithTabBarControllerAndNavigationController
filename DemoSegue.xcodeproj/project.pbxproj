@@ -20,9 +20,9 @@
 		8F4F544419DC011300638B83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4F542619DC011300638B83 /* UIKit.framework */; };
 		8F4F544C19DC011300638B83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F4F544A19DC011300638B83 /* InfoPlist.strings */; };
 		8F4F544E19DC011300638B83 /* DemoSegueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4F544D19DC011300638B83 /* DemoSegueTests.m */; };
-		8F4F545919DC01D500638B83 /* Tab2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4F545819DC01D500638B83 /* Tab2ViewController.m */; };
 		8F4F545C19DC025B00638B83 /* Tab1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4F545B19DC025B00638B83 /* Tab1ViewController.m */; };
 		8F4F546219DC0D1100638B83 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4F546119DC0D1100638B83 /* TabBarViewController.m */; };
+		8F4F546F19DC236D00638B83 /* Tab2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4F546E19DC236D00638B83 /* Tab2ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,12 +53,12 @@
 		8F4F544919DC011300638B83 /* DemoSegueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoSegueTests-Info.plist"; sourceTree = "<group>"; };
 		8F4F544B19DC011300638B83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8F4F544D19DC011300638B83 /* DemoSegueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoSegueTests.m; sourceTree = "<group>"; };
-		8F4F545719DC01D500638B83 /* Tab2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tab2ViewController.h; path = ../Tab2ViewController.h; sourceTree = "<group>"; };
-		8F4F545819DC01D500638B83 /* Tab2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tab2ViewController.m; path = ../Tab2ViewController.m; sourceTree = "<group>"; };
 		8F4F545A19DC025B00638B83 /* Tab1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tab1ViewController.h; sourceTree = "<group>"; };
 		8F4F545B19DC025B00638B83 /* Tab1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tab1ViewController.m; sourceTree = "<group>"; };
 		8F4F546019DC0D1100638B83 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		8F4F546119DC0D1100638B83 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		8F4F546D19DC236D00638B83 /* Tab2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tab2ViewController.h; sourceTree = "<group>"; };
+		8F4F546E19DC236D00638B83 /* Tab2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tab2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +122,8 @@
 				8F4F543219DC011300638B83 /* AppDelegate.m */,
 				8F4F545A19DC025B00638B83 /* Tab1ViewController.h */,
 				8F4F545B19DC025B00638B83 /* Tab1ViewController.m */,
-				8F4F545719DC01D500638B83 /* Tab2ViewController.h */,
-				8F4F545819DC01D500638B83 /* Tab2ViewController.m */,
+				8F4F546D19DC236D00638B83 /* Tab2ViewController.h */,
+				8F4F546E19DC236D00638B83 /* Tab2ViewController.m */,
 				8F4F546019DC0D1100638B83 /* TabBarViewController.h */,
 				8F4F546119DC0D1100638B83 /* TabBarViewController.m */,
 				8F4F543419DC011300638B83 /* Main.storyboard */,
@@ -263,7 +263,7 @@
 				8F4F542F19DC011300638B83 /* main.m in Sources */,
 				8F4F543319DC011300638B83 /* AppDelegate.m in Sources */,
 				8F4F545C19DC025B00638B83 /* Tab1ViewController.m in Sources */,
-				8F4F545919DC01D500638B83 /* Tab2ViewController.m in Sources */,
+				8F4F546F19DC236D00638B83 /* Tab2ViewController.m in Sources */,
 				8F4F546219DC0D1100638B83 /* TabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

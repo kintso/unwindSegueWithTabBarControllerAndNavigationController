@@ -1,14 +1,14 @@
 //
-//  PhotoPickerAppDelegate.m
+//  AppDelegate.m
 //  DemoSegue
 //
 //  Created by Julien on 01/10/2014.
 //  Copyright (c) 2014 Pozpom. All rights reserved.
 //
 
-#import "PhotoPickerAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation PhotoPickerAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

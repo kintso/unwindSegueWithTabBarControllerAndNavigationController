@@ -1,5 +1,5 @@
 //
-//  PhotoPickerAppDelegate.h
+//  AppDelegate.h
 //  DemoSegue
 //
 //  Created by Julien on 01/10/2014.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PhotoPickerAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
