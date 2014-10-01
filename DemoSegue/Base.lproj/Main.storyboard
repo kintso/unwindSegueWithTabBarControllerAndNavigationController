@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="jUw-BG-i05">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="tZk-9d-wNH">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="jUw-BG-i05" customClass="TabBarViewController" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Y3F-pb-Tf3">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Icv-1l-anJ" kind="relationship" relationship="viewControllers" id="wgz-b5-uK8"/>
+                        <segue destination="Hey-KM-gXl" kind="relationship" relationship="viewControllers" id="oRp-dh-QdC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ift-e3-Ebr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-164" y="25"/>
+        </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="FUl-o5-HXj">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Icv-1l-anJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="tsf-fq-acx"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j7c-v5-afm">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ERe-Op-V5N" kind="relationship" relationship="rootViewController" id="87n-mW-sII"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="abe-Or-F49" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370" y="-470"/>
+        </scene>
+        <!--Tab1 View Controller-->
+        <scene sceneID="NBH-jD-gYM">
+            <objects>
+                <viewController id="ERe-Op-V5N" customClass="Tab1ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q3o-k3-O4R"/>
+                        <viewControllerLayoutGuide type="bottom" id="Faz-md-Gk2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jpu-dG-n7y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JC2-ix-NwD">
+                                <rect key="frame" x="121" y="268" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go to tab 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToTab2ButtonTouched:" destination="ERe-Op-V5N" eventType="touchUpInside" id="xhz-Qf-H5i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Tab1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bet-vm-UOQ">
+                                <rect key="frame" x="94" y="239" width="133" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aUq-Q4-iDX"/>
+                    <connections>
+                        <segue destination="9CA-Vm-FV1" kind="unwind" identifier="goToTab2" unwindAction="unwindToTab2:" id="1vI-eb-x7m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eew-YE-egG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="9CA-Vm-FV1" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="926" y="-470"/>
+        </scene>
+        <!--Tab2 View Controller - Item 2-->
+        <scene sceneID="vP5-ee-2eZ">
+            <objects>
+                <viewController id="llb-kI-UQA" customClass="Tab2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dHe-eH-4eu"/>
+                        <viewControllerLayoutGuide type="bottom" id="f9s-en-Kfl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E1o-tE-vIo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Tab2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wi-D5-Ha0">
+                                <rect key="frame" x="94" y="217" width="133" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome from Tab1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thO-I3-d0h">
+                                <rect key="frame" x="84" y="246" width="152" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="lRN-fl-tgg"/>
+                    <navigationItem key="navigationItem" id="emz-OC-sTx"/>
+                    <connections>
+                        <outlet property="tab2WelcomeLabel" destination="thO-I3-d0h" id="328-gu-Qow"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Njm-ri-QPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926" y="285"/>
+        </scene>
+        <!--Nav View Controller - Item-->
+        <scene sceneID="efG-dt-7As">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Hey-KM-gXl" customClass="NavViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="dfy-mX-MOA"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="POe-7e-UK7">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="llb-kI-UQA" kind="relationship" relationship="rootViewController" id="dxn-nr-Pd6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gOL-h8-Rgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="365" y="285"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
